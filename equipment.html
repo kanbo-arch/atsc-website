@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>機材リスト｜AT Sound Company 株式会社アットサウンドカンパニー</title>
+  <meta name="description" content="AT Sound Company（株式会社アットサウンドカンパニー）が保有する音響（PA）機材の一覧です。スピーカー・ミキサー・マイクなど、コンサートやイベントの仮設PAでご利用いただけます。" />
+  <!-- SEO -->
+  <link rel="canonical" href="https://www.ats-c.co.jp/equipment.html" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="AT Sound Company 株式会社アットサウンドカンパニー" />
+  <meta property="og:locale" content="ja_JP" />
+  <meta property="og:title" content="機材リスト｜AT Sound Company 株式会社アットサウンドカンパニー" />
+  <meta property="og:description" content="AT Sound Company（株式会社アットサウンドカンパニー）が保有する音響（PA）機材の一覧です。スピーカー・ミキサー・マイクなど、コンサートやイベントの仮設PAでご利用いただけます。" />
+  <meta property="og:url" content="https://www.ats-c.co.jp/equipment.html" />
+  <meta property="og:image" content="https://www.ats-c.co.jp/images/pa-hero-1.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" href="images/favicon.png" type="image/png" />
+  <link rel="apple-touch-icon" href="images/favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;700;800&family=Noto+Sans+JP:wght@400;500;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- ===== Header ===== -->
+  <header class="header" id="top">
+    <div class="header__inner">
+      <a href="index.html" class="logo"><img src="images/logo.png" alt="AT Sound Company" /></a>
+
+      <nav class="nav" id="nav">
+        <ul class="nav__list">
+          <li><a href="aboutus.html">AboutUS</a></li>
+          <li><a href="index.html#service">SERVICE</a></li>
+          <li><a href="index.html#news">NEWS</a></li>
+          <li><a href="education.html">Education</a></li>
+          <li><a href="index.html#access">Access</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+
+      <button class="hamburger" id="hamburger" aria-label="メニューを開く" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== Page title ===== -->
+    <section>
+      <h1 class="page-title">EQUIPMENT LIST</h1>
+      <p class="page-title__sub">音響機材リスト</p>
+    </section>
+
+    <!-- ===== Equipment groups (tabs) ===== -->
+    <section>
+      <div class="band-cream">
+        <!-- 機材は管理サーバーから読み込みます（読み込めない場合は下の表をそのまま表示） -->
+        <div class="band-inner" data-equipment-api="https://www.news.ats-c.co.jp/api/equipment.php" data-equipment-list="pa">
+
+          <div class="tabs" role="tablist">
+            <button type="button" class="tabs__btn is-active" data-target="panel-speaker" role="tab" aria-selected="true" id="tab-speaker">Speaker</button>
+            <button type="button" class="tabs__btn" data-target="panel-amp" role="tab" aria-selected="false" id="tab-amp">Amp</button>
+            <button type="button" class="tabs__btn" data-target="panel-console" role="tab" aria-selected="false" id="tab-console">Console</button>
+            <button type="button" class="tabs__btn" data-target="panel-io-box" role="tab" aria-selected="false" id="tab-io-box">I/O Box</button>
+            <button type="button" class="tabs__btn" data-target="panel-io-card" role="tab" aria-selected="false" id="tab-io-card">I/O Card</button>
+            <button type="button" class="tabs__btn" data-target="panel-geq" role="tab" aria-selected="false" id="tab-geq">GEQ</button>
+            <button type="button" class="tabs__btn" data-target="panel-prosessor" role="tab" aria-selected="false" id="tab-prosessor">Prosessor</button>
+            <button type="button" class="tabs__btn" data-target="panel-interface" role="tab" aria-selected="false" id="tab-interface">InterFace</button>
+            <button type="button" class="tabs__btn" data-target="panel-inter-comm" role="tab" aria-selected="false" id="tab-inter-comm">Inter-Comm</button>
+            <button type="button" class="tabs__btn" data-target="panel-playback" role="tab" aria-selected="false" id="tab-playback">PlayBack</button>
+            <button type="button" class="tabs__btn" data-target="panel-dj" role="tab" aria-selected="false" id="tab-dj">DJ</button>
+            <button type="button" class="tabs__btn" data-target="panel-rec" role="tab" aria-selected="false" id="tab-rec">Rec</button>
+            <button type="button" class="tabs__btn" data-target="panel-haedphone" role="tab" aria-selected="false" id="tab-haedphone">Haedphone</button>
+            <button type="button" class="tabs__btn" data-target="panel-spritter" role="tab" aria-selected="false" id="tab-spritter">Spritter</button>
+            <button type="button" class="tabs__btn" data-target="panel-microphone" role="tab" aria-selected="false" id="tab-microphone">Microphone</button>
+            <button type="button" class="tabs__btn" data-target="panel-di" role="tab" aria-selected="false" id="tab-di">DI</button>
+            <button type="button" class="tabs__btn" data-target="panel-wireless" role="tab" aria-selected="false" id="tab-wireless">Wireless</button>
+            <button type="button" class="tabs__btn" data-target="panel-iem" role="tab" aria-selected="false" id="tab-iem">IEM</button>
+            <button type="button" class="tabs__btn" data-target="panel-others" role="tab" aria-selected="false" id="tab-others">Others</button>
+          </div>
+
+          <div class="tab-panel is-active" id="panel-speaker" role="tabpanel" aria-labelledby="tab-speaker">
+            <div class="equipment-group">
+              <h2 class="equipment-group__title">Speaker</h2>
+              <div class="equipment-table-wrap">
+                <table class="equipment-table equipment-table--note">
+                  <thead><tr><th>メーカー</th><th>機材名</th><th class="equipment-table__qty">数量</th><th class="equipment-table__note">備考</th></tr></thead>
+                  <tbody>
+                  <tr><td rowspan="1">BEHRINGER</td><td>EUROLIVE B205</td><td class="equipment-table__qty">4</td><td class="equipment-table__note"></td></tr>
+                  <tr><td rowspan="3">BLAZE Audio</td><td>Ci2 Black</td><td class="equipment-table__qty">4</td><td class="equipment-table__note"></td></tr>
+                  <tr><td>Ci2 Whiite</td><td class="equipment-table__qty">8</td><td class="equipment-table__note"></td></tr>
+                  <tr><td>HSS-3000</td><td class="equipment-table__qty">1</td><td class="equipment-table__note">Include Amp(1week rental)</td></tr>
+                  <tr><td rowspan="4">BOSE</td><td>L1 Compact</td><td class="equipment-table__qty">2</td><td class="equipment-table__note"></td></tr>
+                  <tr><td>L1 Pro8</td><td class="equipment-table__qty">2</td><td class="equipment-table__note"></td></tr>
+                  <tr><td>S1 Pro</td><td class="equipment-table__qty">1</td><td class="equipment-table__note"></td></tr>
+                  <tr><td>Soundlink Revolve Ⅱ</td><td class="equipment-table__qty">2</td><td class="equipment-table__note"></td></tr>
+                  <tr><td rowspan="3">CODA</td><td>D5 Tube</td><td class="equipment-table__qty">8</td><td class="equipment-table__note"></td></tr>
+                  <tr><td>D5 Cube Black</td><td class="equipment-table__qty">32</td><td class="equipment-table__note"></td></tr>
+                  <tr><td>D5 Cube White</td><td class="equipment-table__qty">4</td><td class="equipment-table__note"></td></tr>
+                  <tr><td rowspan="15">d&amp;b audio-technik</td><td>KSL8</td><td class="equipment-table__qty">12</td><td class="equipment-table__note"></td></tr>
+                  <tr><td>KSL Sub</td><td class="equipment-table__qty">4</td><td class="equipment-table__note"></td></tr>
+                  <tr><td>SL Sub</td><td class="equipment-table__qty">2</td><td class="equipment-table__note"></td></tr>
+                  <tr><td>V8</td><td class="equipment-table__qty">24</td><td class="equipment-table__note"></td></tr>
+                  <tr><td>V Sub</td><td class="equipment-table__qty">8</td><td class="equipment-table__note"></td></tr>
+                  <tr><td>V7P</td><td class="equipment-table__qty">6</td><td class="equipment-table__note"></td></tr>
+                  <tr><td>AL60</td><td class="equipment-table__qty">6</td><td class="equipment-table__note"></td></tr>
+                  <tr><td>T10</td><td class="equipment-table__qty">18</td><td class="equipment-table__note"></td></tr>
+                  <tr><td>E15X-Sub</td><td class="equipment-table__qty">4</td><td class="equipment-table__note"></td></tr>
+                  <tr><td>B8-Sub</td><td class="equipment-table__qty">2</td><td class="equipment-table__note"></td></tr>
+                  <tr><td>T Sub</td><td class="equipment-table__qty">2</td><td class="equipment-table__note"></td></tr>
+                  <tr><td>44s</td><td class="equipment-table__qty">4</td><td class="equipment-table__note"></td></tr>
+                  <tr><td>E5</td><td class="equipment-table__qty">8</td><td class="equipment-table__note"></td></tr>
+                  <tr><td>M4</td><td class="equipment-table__qty">12</td><td class="equipment-table__note"></td></tr>
+                  <tr><td>Max</td><td class="equipment-table__qty">4</td><td class="equipment-table__note"></td></tr>
+                  <tr><td rowspan="3">ElectorVoice</td><td>ZX90 B</td><td class="equipment-table__qty">7</td><td class="equipment-table__note"></td></tr>
+                  <tr><td>ZX90 W</td><td class="equipment-table__qty">2</td><td class="equipment-table__note"></td></tr>
+                  <tr><td>SX300</td><td class="equipment-table__qty">6</td><td class="equipment-table__note"></td></tr>
+                  <tr><td rowspan="1">JBL</td><td>VRX932LA-1</td><td class="equipment-table__qty">6</td><td class="equipment-table__note"></td></tr>
+                  <tr><td rowspan="5">Nexo</td><td>VRX918</td><td class="equipment-table__qty">4</td><td class="equipment-table__note"></td></tr>
+                  <tr><td>PS15</td><td class="equipment-table__qty">10</td><td class="equipment-table__note"></td></tr>
+                  <tr><td>PS10</td><td class="equipment-table__qty">6</td><td class="equipment-table__note"></td></tr>
+                  <tr><td>LS-600</td><td class="equipment-table__qty">2</td><td class="equipment-table__note"></td></tr>
+                  <tr><td>LS-18</td><td class="equipment-table__qty">2</td><td class="equipment-table__note"></td></tr>
+                  <tr><td rowspan="1">TOA</td><td>TC730AM トランペット</td><td class="equipment-table__qty">8</td><td class="equipment-table__note"></td></tr>
+                  <tr><td rowspan="4">YAMAHA</td><td>MS101-4</td><td class="equipment-table__qty">8</td><td class="equipment-table__note"></td></tr>
+                  <tr><td>VXS8</td><td class="equipment-table__qty">10</td><td class="equipment-table__note"></td></tr>
+                  <tr><td>VXS5</td><td class="equipment-table__qty">16</td><td class="equipment-table__note"></td></tr>
+                  <tr><td>HS7</td><td class="equipment-table__qty">2</td><td class="equipment-table__note"></td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-panel" id="panel-amp" role="tabpanel" aria-labelledby="tab-amp" hidden>
+            <div class="equipment-group">
+              <h2 class="equipment-group__title">Amp</h2>
+              <div class="equipment-table-wrap">
+                <table class="equipment-table equipment-table--note">
+                  <thead><tr><th>メーカー</th><th>機材名</th><th class="equipment-table__qty">数量</th><th class="equipment-table__note">備考</th></tr></thead>
+                  <tbody>
+                  <tr><td rowspan="2">BOSE</td><td>FreeSpace ZA250-LZ</td><td class="equipment-table__qty">1</td><td class="equipment-table__note"></td></tr>
+                  <tr><td>FreeSpace IZA250-LZ</td><td class="equipment-table__qty">1</td><td class="equipment-table__note"></td></tr>
+                  <tr><td rowspan="4">CAMCO</td><td>D-POWER7</td><td class="equipment-table__qty">6</td><td class="equipment-table__note"></td></tr>
+                  <tr><td>Q-Power10</td><td class="equipment-table__qty">3</td><td class="equipment-table__note"></td></tr>
+                  <tr><td>Vortex3</td><td class="equipment-table__qty">2</td><td class="equipment-table__note"></td></tr>
+                  <tr><td>Quattrocanali 4804-D</td><td class="equipment-table__qty">1</td><td class="equipment-table__note"></td></tr>
+                  <tr><td rowspan="1">Crown</td><td>I-Tech 4x3500</td><td class="equipment-table__qty">2</td><td class="equipment-table__note"></td></tr>
+                  <tr><td rowspan="3">d&amp;b audio-technik</td><td>D80</td><td class="equipment-table__qty">10</td><td class="equipment-table__note"></td></tr>
+                  <tr><td>D40</td><td class="equipment-table__qty">8</td><td class="equipment-table__note"></td></tr>
+                  <tr><td>D20</td><td class="equipment-table__qty">4</td><td class="equipment-table__note"></td></tr>
+                  <tr><td rowspan="2">LabGruppen</td><td>CA2402</td><td class="equipment-table__qty">6</td><td class="equipment-table__note"></td></tr>
+                  <tr><td>FAD2402</td><td class="equipment-table__qty">10</td><td class="equipment-table__note"></td></tr>
+                  <tr><td rowspan="3">NEXO</td><td>NXAMP 4x4</td><td class="equipment-table__qty">2</td><td class="equipment-table__note"></td></tr>
+                  <tr><td>NXAMP 4x2 mk2</td><td class="equipment-table__qty">1</td><td class="equipment-table__note"></td></tr>
+                  <tr><td>NXAMP 4x1 mk2</td><td class="equipment-table__qty">1</td><td class="equipment-table__note"></td></tr>
+                  <tr><td rowspan="1">QSC</td><td>GX3</td><td class="equipment-table__qty">2</td><td class="equipment-table__note"></td></tr>
+                  <tr><td rowspan="1">TASCAM</td><td>SRA5050</td><td class="equipment-table__qty">4</td><td class="equipment-table__note"></td></tr>
+                  <tr><td rowspan="1">YAMAHA</td><td>XH200</td><td class="equipment-table__qty">1</td><td class="equipment-table__note">hi-Impedance</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-panel" id="panel-console" role="tabpanel" aria-labelledby="tab-console" hidden>
+            <div class="equipment-group">
+              <h2 class="equipment-group__title">Console</h2>
+              <div class="equipment-table-wrap">
+                <table class="equipment-table equipment-table--note">
+                  <thead><tr><th>メーカー</th><th>機材名</th><th class="equipment-table__qty">数量</th><th class="equipment-table__note">備考</th></tr></thead>
+                  <tbody>
+                  <tr><td rowspan="3">AVID</td><td>S6L 32D</td><td class="equipment-table__qty">1</td><td class="equipment-table__note">Include E6L-192+STAGE64+Waves</td></tr>
+                  <tr><td>S6L 24C</td><td class="equipment-table__qty">1</td><td class="equipment-table__note">Include E6L-112+STAGE64+Waves</td></tr>
+                  <tr><td>S6L 16C</td><td class="equipment-table__qty">1</td><td class="equipment-table__note">Include E6L-112+STAGE64+Waves</td></tr>
+                  <tr><td rowspan="2">BEHRINGER</td><td>XENYX1204</td><td class="equipment-table__qty">3</td><td class="equipment-table__note"></td></tr>
+                  <tr><td>XENYX502</td><td class="equipment-table__qty">9</td><td class="equipment-table__note"></td></tr>
+                  <tr><td rowspan="1">SoundCraft</td><td>EPM6</td><td class="equipment-table__qty">1</td><td class="equipment-table__note"></td></tr>
+                  <tr><td rowspan="14">YAMAHA</td><td>DM7</td><td class="equipment-table__qty">1</td><td class="equipment-table__note">I/O boxは別</td></tr>
+                  <tr><td>CL5</td><td class="equipment-table__qty">2</td><td class="equipment-table__note">I/O boxは別</td></tr>
+                  <tr><td>CL3</td><td class="equipment-table__qty">1</td><td class="equipment-table__note">I/O boxは別</td></tr>
+                  <tr><td>QL1</td><td class="equipment-table__qty">4</td><td class="equipment-table__note"></td></tr>
+                  <tr><td>DM3 Standard</td><td class="equipment-table__qty">1</td><td class="equipment-table__note"></td></tr>
+                  <tr><td>DM3 DANTE</td><td class="equipment-table__qty">2</td><td class="equipment-table__note"></td></tr>
+                  <tr><td>O1V96i</td><td class="equipment-table__qty">1</td><td class="equipment-table__note"></td></tr>
+                  <tr><td>Prism 8x8 Dante</td><td class="equipment-table__qty">1</td><td class="equipment-table__note"></td></tr>
+                  <tr><td>Prism 12x12 Dante</td><td class="equipment-table__qty">1</td><td class="equipment-table__note"></td></tr>
+                  <tr><td>MG16</td><td class="equipment-table__qty">1</td><td class="equipment-table__note"></td></tr>
+                  <tr><td>MG16/4</td><td class="equipment-table__qty">1</td><td class="equipment-table__note"></td></tr>
+                  <tr><td>MG102C</td><td class="equipment-table__qty">1</td><td class="equipment-table__note"></td></tr>
+                  <tr><td>MG06</td><td class="equipment-table__qty">4</td><td class="equipment-table__note"></td></tr>
+                  <tr><td>MG12</td><td class="equipment-table__qty">1</td><td class="equipment-table__note"></td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-panel" id="panel-io-box" role="tabpanel" aria-labelledby="tab-io-box" hidden>
+            <div class="equipment-group">
+              <h2 class="equipment-group__title">I/O Box</h2>
+              <div class="equipment-table-wrap">
+                <table class="equipment-table">
+                  <thead><tr><th>メーカー</th><th>機材名</th><th class="equipment-table__qty">数量</th></tr></thead>
+                  <tbody>
+                  <tr><td rowspan="3">AVID</td><td>Stage64</td><td class="equipment-table__qty">2</td></tr>
+                  <tr><td>Stage32</td><td class="equipment-table__qty">1</td></tr>
+                  <tr><td>Local16</td><td class="equipment-table__qty">1</td></tr>
+                  <tr><td rowspan="1">NONE</td><td>INPUT BOX</td><td class="equipment-table__qty">1</td></tr>
+                  <tr><td rowspan="4">YAMAHA</td><td>Rio3224-D</td><td class="equipment-table__qty">3</td></tr>
+                  <tr><td>Rio3224-D2</td><td class="equipment-table__qty">4</td></tr>
+                  <tr><td>Rio1608-D</td><td class="equipment-table__qty">2</td></tr>
+                  <tr><td>Rio1608-D2</td><td class="equipment-table__qty">2</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-panel" id="panel-io-card" role="tabpanel" aria-labelledby="tab-io-card" hidden>
+            <div class="equipment-group">
+              <h2 class="equipment-group__title">I/O Card</h2>
+              <div class="equipment-table-wrap">
+                <table class="equipment-table">
+                  <thead><tr><th>メーカー</th><th>機材名</th><th class="equipment-table__qty">数量</th></tr></thead>
+                  <tbody>
+                  <tr><td rowspan="1">Audinate</td><td>MY16-AUD</td><td class="equipment-table__qty">1</td></tr>
+                  <tr><td rowspan="1">Waves</td><td>WSG-Y16</td><td class="equipment-table__qty"></td></tr>
+                  <tr><td rowspan="3">YAMAHA</td><td>MY16-AT</td><td class="equipment-table__qty">2</td></tr>
+                  <tr><td>MY8-AD24</td><td class="equipment-table__qty">1</td></tr>
+                  <tr><td>MY4-DA</td><td class="equipment-table__qty">1</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-panel" id="panel-geq" role="tabpanel" aria-labelledby="tab-geq" hidden>
+            <div class="equipment-group">
+              <h2 class="equipment-group__title">GEQ</h2>
+              <div class="equipment-table-wrap">
+                <table class="equipment-table">
+                  <thead><tr><th>メーカー</th><th>機材名</th><th class="equipment-table__qty">数量</th></tr></thead>
+                  <tbody>
+                  <tr><td rowspan="2">dbx</td><td>dbx1231</td><td class="equipment-table__qty">1</td></tr>
+                  <tr><td>dbx 160A</td><td class="equipment-table__qty">1</td></tr>
+                  <tr><td rowspan="1">YAMAHA</td><td>Q2031</td><td class="equipment-table__qty">2</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-panel" id="panel-prosessor" role="tabpanel" aria-labelledby="tab-prosessor" hidden>
+            <div class="equipment-group">
+              <h2 class="equipment-group__title">Prosessor</h2>
+              <div class="equipment-table-wrap">
+                <table class="equipment-table">
+                  <thead><tr><th>メーカー</th><th>機材名</th><th class="equipment-table__qty">数量</th></tr></thead>
+                  <tbody>
+                  <tr><td rowspan="2">LAKE</td><td>LM44</td><td class="equipment-table__qty">1</td></tr>
+                  <tr><td>LM26</td><td class="equipment-table__qty">2</td></tr>
+                  <tr><td rowspan="2">Nexo</td><td>PS15TD-v3</td><td class="equipment-table__qty">2</td></tr>
+                  <tr><td>PS10TD-v3</td><td class="equipment-table__qty">1</td></tr>
+                  <tr><td rowspan="1">Waves</td><td>SoundGrid EX Server-C(Include Marciuy)</td><td class="equipment-table__qty">3</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-panel" id="panel-interface" role="tabpanel" aria-labelledby="tab-interface" hidden>
+            <div class="equipment-group">
+              <h2 class="equipment-group__title">InterFace</h2>
+              <div class="equipment-table-wrap">
+                <table class="equipment-table">
+                  <thead><tr><th>メーカー</th><th>機材名</th><th class="equipment-table__qty">数量</th></tr></thead>
+                  <tbody>
+                  <tr><td rowspan="1">FOCUSRITE</td><td>Scarlet 4i4 Gen3</td><td class="equipment-table__qty">1</td></tr>
+                  <tr><td rowspan="1">iConnectivity</td><td>PlayAudio1U</td><td class="equipment-table__qty">2</td></tr>
+                  <tr><td rowspan="1">RME</td><td>Fireface UC</td><td class="equipment-table__qty">1</td></tr>
+                  <tr><td rowspan="1">TASCAM</td><td>OCTA-CAPTURE</td><td class="equipment-table__qty">1</td></tr>
+                  <tr><td rowspan="1">YAMAHA</td><td>RUio16-D</td><td class="equipment-table__qty">2</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-panel" id="panel-inter-comm" role="tabpanel" aria-labelledby="tab-inter-comm" hidden>
+            <div class="equipment-group">
+              <h2 class="equipment-group__title">Inter-Comm</h2>
+              <div class="equipment-table-wrap">
+                <table class="equipment-table">
+                  <thead><tr><th>メーカー</th><th>機材名</th><th class="equipment-table__qty">数量</th></tr></thead>
+                  <tbody>
+                  <tr><td rowspan="2">HollyLand</td><td>Solidcom C1</td><td class="equipment-table__qty">1</td></tr>
+                  <tr><td>Solidcom C1 Pro</td><td class="equipment-table__qty">1</td></tr>
+                  <tr><td rowspan="1">Riedel</td><td>Bolero 子機10個 ANT 1 I/F 1 充電器 2</td><td class="equipment-table__qty">1</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-panel" id="panel-playback" role="tabpanel" aria-labelledby="tab-playback" hidden>
+            <div class="equipment-group">
+              <h2 class="equipment-group__title">PlayBack</h2>
+              <div class="equipment-table-wrap">
+                <table class="equipment-table">
+                  <thead><tr><th>メーカー</th><th>機材名</th><th class="equipment-table__qty">数量</th></tr></thead>
+                  <tbody>
+                  <tr><td rowspan="6">TASCAM</td><td>CD-500</td><td class="equipment-table__qty">4</td></tr>
+                  <tr><td>CD-200</td><td class="equipment-table__qty">1</td></tr>
+                  <tr><td>SSCDR-200</td><td class="equipment-table__qty">1</td></tr>
+                  <tr><td>CD-400U</td><td class="equipment-table__qty">2</td></tr>
+                  <tr><td>MD-350</td><td class="equipment-table__qty">4</td></tr>
+                  <tr><td>CD-A500</td><td class="equipment-table__qty">1</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-panel" id="panel-dj" role="tabpanel" aria-labelledby="tab-dj" hidden>
+            <div class="equipment-group">
+              <h2 class="equipment-group__title">DJ</h2>
+              <div class="equipment-table-wrap">
+                <table class="equipment-table equipment-table--note">
+                  <thead><tr><th>メーカー</th><th>機材名</th><th class="equipment-table__qty">数量</th><th class="equipment-table__note">備考</th></tr></thead>
+                  <tbody>
+                  <tr><td rowspan="2">Pioneer</td><td>DJM A9</td><td class="equipment-table__qty">1</td><td class="equipment-table__note">DJ機材</td></tr>
+                  <tr><td>CDJ-3000</td><td class="equipment-table__qty">2</td><td class="equipment-table__note">DJ機材</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-panel" id="panel-rec" role="tabpanel" aria-labelledby="tab-rec" hidden>
+            <div class="equipment-group">
+              <h2 class="equipment-group__title">Rec</h2>
+              <div class="equipment-table-wrap">
+                <table class="equipment-table">
+                  <thead><tr><th>メーカー</th><th>機材名</th><th class="equipment-table__qty">数量</th></tr></thead>
+                  <tbody>
+                  <tr><td rowspan="3">TASCAM</td><td>SSR-250N</td><td class="equipment-table__qty">1</td></tr>
+                  <tr><td>DA-6400</td><td class="equipment-table__qty">1</td></tr>
+                  <tr><td>DR-40X</td><td class="equipment-table__qty">2</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-panel" id="panel-haedphone" role="tabpanel" aria-labelledby="tab-haedphone" hidden>
+            <div class="equipment-group">
+              <h2 class="equipment-group__title">Haedphone</h2>
+              <div class="equipment-table-wrap">
+                <table class="equipment-table">
+                  <thead><tr><th>メーカー</th><th>機材名</th><th class="equipment-table__qty">数量</th></tr></thead>
+                  <tbody>
+                  <tr><td rowspan="4">&#8212;</td><td>CD900ST</td><td class="equipment-table__qty">11</td></tr>
+                  <tr><td>MDR-7506</td><td class="equipment-table__qty">2</td></tr>
+                  <tr><td>HA-8000</td><td class="equipment-table__qty">2</td></tr>
+                  <tr><td>HA4700</td><td class="equipment-table__qty">3</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-panel" id="panel-spritter" role="tabpanel" aria-labelledby="tab-spritter" hidden>
+            <div class="equipment-group">
+              <h2 class="equipment-group__title">Spritter</h2>
+              <div class="equipment-table-wrap">
+                <table class="equipment-table">
+                  <thead><tr><th>メーカー</th><th>機材名</th><th class="equipment-table__qty">数量</th></tr></thead>
+                  <tbody>
+                  <tr><td rowspan="2">&#8212;</td><td>SQ1S Spritter</td><td class="equipment-table__qty">1</td></tr>
+                  <tr><td>12ch Pless Box</td><td class="equipment-table__qty">2</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-panel" id="panel-microphone" role="tabpanel" aria-labelledby="tab-microphone" hidden>
+            <div class="equipment-group">
+              <h2 class="equipment-group__title">Microphone</h2>
+              <div class="equipment-table-wrap">
+                <table class="equipment-table">
+                  <thead><tr><th>メーカー</th><th>機材名</th><th class="equipment-table__qty">数量</th></tr></thead>
+                  <tbody>
+                  <tr><td rowspan="2">AKG</td><td>C414</td><td class="equipment-table__qty">6</td></tr>
+                  <tr><td>C451B</td><td class="equipment-table__qty">6</td></tr>
+                  <tr><td rowspan="1">Arco percussion</td><td>PU-44C カホンMic</td><td class="equipment-table__qty">1</td></tr>
+                  <tr><td rowspan="2">Audio-Technica</td><td>ATM73a</td><td class="equipment-table__qty">2</td></tr>
+                  <tr><td>SM35-TQG</td><td class="equipment-table__qty">4</td></tr>
+                  <tr><td rowspan="1">COUNTRYMAN</td><td>ISOMAX</td><td class="equipment-table__qty">4</td></tr>
+                  <tr><td rowspan="1">CROWN</td><td>PCC160</td><td class="equipment-table__qty">2</td></tr>
+                  <tr><td rowspan="4">DPA</td><td>Vo4099</td><td class="equipment-table__qty">13</td></tr>
+                  <tr><td>Core4488</td><td class="equipment-table__qty">8</td></tr>
+                  <tr><td>DPA4088</td><td class="equipment-table__qty">1</td></tr>
+                  <tr><td>DPA4080</td><td class="equipment-table__qty">8</td></tr>
+                  <tr><td rowspan="1">Neumann</td><td>KM184mt</td><td class="equipment-table__qty">8</td></tr>
+                  <tr><td rowspan="3">Sennheiser</td><td>MKE2 銀</td><td class="equipment-table__qty">3</td></tr>
+                  <tr><td>MKE2 金</td><td class="equipment-table__qty">4</td></tr>
+                  <tr><td>MKE2 Sennheiser</td><td class="equipment-table__qty">4</td></tr>
+                  <tr><td rowspan="15">SHURE</td><td>SM58</td><td class="equipment-table__qty">30</td></tr>
+                  <tr><td>SM58s</td><td class="equipment-table__qty">12</td></tr>
+                  <tr><td>SM57</td><td class="equipment-table__qty">21</td></tr>
+                  <tr><td>Beta52A</td><td class="equipment-table__qty">3</td></tr>
+                  <tr><td>Beta58A</td><td class="equipment-table__qty">4</td></tr>
+                  <tr><td>Beta57A</td><td class="equipment-table__qty">2</td></tr>
+                  <tr><td>Beta87A</td><td class="equipment-table__qty">2</td></tr>
+                  <tr><td>Beta91A</td><td class="equipment-table__qty">3</td></tr>
+                  <tr><td>ATM25</td><td class="equipment-table__qty">2</td></tr>
+                  <tr><td>e904</td><td class="equipment-table__qty">14</td></tr>
+                  <tr><td>e906</td><td class="equipment-table__qty">2</td></tr>
+                  <tr><td>SM55 SUPER</td><td class="equipment-table__qty">1</td></tr>
+                  <tr><td>MX418/C</td><td class="equipment-table__qty">4</td></tr>
+                  <tr><td>WBH54</td><td class="equipment-table__qty">2</td></tr>
+                  <tr><td>BetaWB98-H/C</td><td class="equipment-table__qty">1</td></tr>
+                  <tr><td rowspan="1">YAMAHIKO</td><td>CPS-PF1S 山彦</td><td class="equipment-table__qty">2</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-panel" id="panel-di" role="tabpanel" aria-labelledby="tab-di" hidden>
+            <div class="equipment-group">
+              <h2 class="equipment-group__title">DI</h2>
+              <div class="equipment-table-wrap">
+                <table class="equipment-table">
+                  <thead><tr><th>メーカー</th><th>機材名</th><th class="equipment-table__qty">数量</th></tr></thead>
+                  <tbody>
+                  <tr><td rowspan="1">BOSS</td><td>DI-1</td><td class="equipment-table__qty">2</td></tr>
+                  <tr><td rowspan="1">COUNTRYMAN</td><td>Type85</td><td class="equipment-table__qty">3</td></tr>
+                  <tr><td rowspan="1">LA Audio</td><td>DBT-Plus</td><td class="equipment-table__qty">1</td></tr>
+                  <tr><td rowspan="3">Radial</td><td>J48</td><td class="equipment-table__qty">10</td></tr>
+                  <tr><td>J48 ST</td><td class="equipment-table__qty">2</td></tr>
+                  <tr><td>JDI</td><td class="equipment-table__qty">1</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-panel" id="panel-wireless" role="tabpanel" aria-labelledby="tab-wireless" hidden>
+            <div class="equipment-group">
+              <h2 class="equipment-group__title">Wireless</h2>
+              <div class="equipment-table-wrap">
+                <table class="equipment-table">
+                  <thead><tr><th>メーカー</th><th>機材名</th><th class="equipment-table__qty">数量</th></tr></thead>
+                  <tbody>
+                  <tr><td rowspan="4">SENNHEISER</td><td>EM3732-Ⅱ</td><td class="equipment-table__qty">4</td></tr>
+                  <tr><td>EM3732-Ⅱ</td><td class="equipment-table__qty"></td></tr>
+                  <tr><td>SK5212-Ⅱ</td><td class="equipment-table__qty">4</td></tr>
+                  <tr><td>SKM5200-Ⅱ</td><td class="equipment-table__qty">8</td></tr>
+                  <tr><td rowspan="12">SHURE</td><td>UHF-R UR4D (WhiteSpace)</td><td class="equipment-table__qty">16</td></tr>
+                  <tr><td>UR2</td><td class="equipment-table__qty">52</td></tr>
+                  <tr><td>UR1</td><td class="equipment-table__qty">20</td></tr>
+                  <tr><td>ULXD4 (B帯)</td><td class="equipment-table__qty">2</td></tr>
+                  <tr><td>ULXD1 (B帯)</td><td class="equipment-table__qty">2</td></tr>
+                  <tr><td>ULXD2 (B帯)</td><td class="equipment-table__qty">2</td></tr>
+                  <tr><td>ULXD4DJ-Z16 (1.2GHz)</td><td class="equipment-table__qty">2</td></tr>
+                  <tr><td>ULXD1 Z16 (1.2GHz)</td><td class="equipment-table__qty">4</td></tr>
+                  <tr><td>ULXD2 Z16 (1.2GHz)</td><td class="equipment-table__qty">4</td></tr>
+                  <tr><td>AD4Q Z16 (1.2GHz)</td><td class="equipment-table__qty">1</td></tr>
+                  <tr><td>AD1 Z16 (1.2GHz)</td><td class="equipment-table__qty">4</td></tr>
+                  <tr><td>AD2 Z16 (1.2GHz)</td><td class="equipment-table__qty">4</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-panel" id="panel-iem" role="tabpanel" aria-labelledby="tab-iem" hidden>
+            <div class="equipment-group">
+              <h2 class="equipment-group__title">IEM</h2>
+              <div class="equipment-table-wrap">
+                <table class="equipment-table">
+                  <thead><tr><th>メーカー</th><th>機材名</th><th class="equipment-table__qty">数量</th></tr></thead>
+                  <tbody>
+                  <tr><td rowspan="9">SHURE</td><td>PSM1000 (J8J)</td><td class="equipment-table__qty">2</td></tr>
+                  <tr><td>PSM1000 (L8J)</td><td class="equipment-table__qty">3</td></tr>
+                  <tr><td>PSM1000 (L11J)</td><td class="equipment-table__qty">2</td></tr>
+                  <tr><td>P10R (J8J)</td><td class="equipment-table__qty">4</td></tr>
+                  <tr><td>P10R (L8J)</td><td class="equipment-table__qty">4</td></tr>
+                  <tr><td>P10R (L11J)</td><td class="equipment-table__qty">5</td></tr>
+                  <tr><td>P10R+ (L8J)</td><td class="equipment-table__qty">4</td></tr>
+                  <tr><td>AXT PSM ADTD (K56)</td><td class="equipment-table__qty">1</td></tr>
+                  <tr><td>AXT PSM ADXR (K56)</td><td class="equipment-table__qty">5</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-panel" id="panel-others" role="tabpanel" aria-labelledby="tab-others" hidden>
+            <div class="equipment-group">
+              <h2 class="equipment-group__title">Others</h2>
+              <div class="equipment-table-wrap">
+                <table class="equipment-table">
+                  <thead><tr><th>メーカー</th><th>機材名</th><th class="equipment-table__qty">数量</th></tr></thead>
+                  <tbody>
+                  <tr><td rowspan="2">&#8212;</td><td>ラクサー PLW-D350K</td><td class="equipment-table__qty">1</td></tr>
+                  <tr><td>GUIL ULK-650XL</td><td class="equipment-table__qty">2</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PAトップページへ戻る ===== -->
+    <section>
+      <div class="band-inner cta">
+        <a href="pa.html" class="btn btn--wide">BACK</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer" id="contact">
+    <a href="index.html" class="footer__logo"><img src="images/logo.png" alt="AT Sound Company" /></a>
+
+    <nav class="footer__nav">
+      <a href="aboutus.html">AboutUS</a>
+      <a href="index.html#news">Information</a>
+      <a href="index.html#service">Service</a>
+      <a href="equipment.html">Equipment List</a>
+      <a href="education.html">Education</a>
+      <a href="index.html#access">Access</a>
+      <a href="contact.html">Contact Us</a>
+      <a href="privacy.html">Privacy Policy</a>
+    </nav>
+
+    <dl class="footer__addr">
+      <div><dt>OFFICE</dt><dd>340-0015　埼玉県草加市高砂2-17-23-2F</dd></div>
+      <div><dt>WAREHOUSE</dt><dd>340-0808　埼玉県八潮市緑町5-9-6</dd></div>
+    </dl>
+
+    <ul class="footer__sns">
+      <li><a href="https://www.facebook.com/profile.php?id=61595845280527" aria-label="Facebook" target="_blank" rel="noopener"><img src="images/facebook.svg" alt="Facebook" /></a></li>
+      <li><a href="https://www.instagram.com/atssoundcompany/" aria-label="Instagram" target="_blank" rel="noopener"><img src="images/instagram.svg" alt="Instagram" /></a></li>
+      <li><a href="#" aria-label="Threads" target="_blank" rel="noopener"><img src="images/threads.svg" alt="Threads" /></a></li>
+    </ul>
+
+    <p class="footer__copy">&copy; 2026 AT Sound Company. All rights reserved.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/equipment.js" defer></script>
+  <script>
+    (function () {
+      var btns = document.querySelectorAll('.tabs__btn');
+      var panels = document.querySelectorAll('.tab-panel');
+      btns.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          btns.forEach(function (b) { b.classList.remove('is-active'); b.setAttribute('aria-selected', 'false'); });
+          panels.forEach(function (p) { p.hidden = true; p.classList.remove('is-active'); });
+          btn.classList.add('is-active');
+          btn.setAttribute('aria-selected', 'true');
+          var target = document.getElementById(btn.dataset.target);
+          target.hidden = false;
+          target.classList.add('is-active');
+        });
+      });
+    })();
+  </script>
+</body>
+</html>

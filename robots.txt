@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /news/admin/
+Disallow: /news/api/
+
+Sitemap: https://www.ats-c.co.jp/sitemap.xml
