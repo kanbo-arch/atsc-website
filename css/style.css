@@ -156,7 +156,8 @@ img, svg, iframe { display: block; max-width: 100%; }
 .access__info { font-size: 16px; color: #000; }
 .access__company { font-size: 18px; letter-spacing: .18px; margin-bottom: 12px; }
 .access__addr > div { display: flex; gap: 12px; margin-bottom: 4px; }
-.access__addr dt { flex: 0 0 130px; }
+.access__addr dt { flex: 0 0 150px; white-space: nowrap; }
+.access__zip { display: inline-block; min-width: 6em; } /* 郵便番号の幅をそろえて住所の頭を揃える */
 .access__gmap { display: inline-block; margin-top: 8px; color: var(--blue); text-decoration: underline; }
 
 /* ===== Footer ===== */
@@ -224,11 +225,17 @@ img, svg, iframe { display: block; max-width: 100%; }
 
   .news__item { height: auto; flex-direction: column; align-items: flex-start; gap: 6px; padding: 18px 12px; font-size: 15px; }
   .access__map { aspect-ratio: 4 / 3; }
-  .access__addr dt, .footer__addr dt { flex-basis: auto; }
+  /* ACCESS: 見出し（OFFICE等）の下に住所を置いて縦にそろえる */
+  .access__company { font-size: 17px; margin-bottom: 16px; }
+  .access__addr > div { flex-direction: column; gap: 2px; margin-bottom: 12px; }
+  .access__addr dt { flex-basis: auto; font-weight: 700; font-size: 14px; color: var(--ink); }
 
   .footer { padding: 56px 20px 40px; }
-  .footer__nav { font-size: 15px; gap: 16px; }
-  .footer__addr { font-size: 15px; }
+  /* フッター：メニューと住所をモバイルでは縦並び */
+  .footer__nav { flex-direction: column; align-items: center; font-size: 15px; gap: 14px; }
+  .footer__addr { display: block; text-align: center; font-size: 15px; }
+  .footer__addr > div { flex-direction: column; gap: 2px; margin-bottom: 14px; }
+  .footer__addr dt { flex-basis: auto; font-weight: 700; font-size: 13px; letter-spacing: 1px; color: var(--ink); }
   .footer__sns { gap: 44px; }
 }
 
@@ -277,9 +284,11 @@ img, svg, iframe { display: block; max-width: 100%; }
 .message-band__inner {
   max-width: 1120px; margin: 0 auto; padding: 44px 20px;
   text-align: center; color: #fff7f7;
-  font-weight: 700; font-size: 15px; letter-spacing: .6px; line-height: 28px;
+  font-weight: 700; font-size: 16px; letter-spacing: .8px; line-height: 2;
 }
 .message-band__inner p { margin: 0; }
+.message-band__inner p + p { margin-top: 20px; }
+.message-band__inner .ph { display: inline-block; } /* 文節の途中で改行させない */
 
 /* Page-level title (COMPANY PROFILE) — no border */
 .page-title {
@@ -288,9 +297,13 @@ img, svg, iframe { display: block; max-width: 100%; }
 }
 
 /* Company profile table */
-.profile { max-width: 640px; margin: 0 auto; }
-.profile > div { display: flex; gap: 56px; padding: 10px 0; font-size: 20px; letter-spacing: 1px; color: #000; }
-.profile dt { flex: 0 0 110px; }
+.profile { max-width: 720px; margin: 0 auto; border-top: 1px solid rgba(44, 26, 14, .25); }
+.profile > div {
+  display: flex; align-items: baseline; gap: 40px; padding: 22px 12px;
+  font-size: 17px; letter-spacing: 1px; color: #000;
+  border-bottom: 1px solid rgba(44, 26, 14, .25);
+}
+.profile dt { flex: 0 0 120px; font-weight: 700; font-size: 15px; letter-spacing: 2px; color: var(--ink); }
 .profile dd { margin: 0; }
 
 @media (max-width: 768px) {
@@ -299,9 +312,11 @@ img, svg, iframe { display: block; max-width: 100%; }
   .mvv-title .ini { font-size: 34px; }
   .mvv-grid { grid-template-columns: 300px; }
   .page-title { font-size: 26px; padding: 30px 20px; }
-  .message-band__inner { font-size: 14px; line-height: 25px; }
-  .profile { max-width: 340px; }
-  .profile > div { flex-direction: column; gap: 2px; padding: 12px 0; font-size: 16px; }
+  .message-band__inner { font-size: 14px; line-height: 1.9; padding: 40px 20px; }
+  .message-band__inner br { display: none; } /* モバイルは文節単位で自然に折り返す */
+  .profile { max-width: 100%; }
+  .profile > div { flex-direction: column; gap: 4px; padding: 16px 4px; font-size: 15px; letter-spacing: .5px; }
+  .profile dt { flex-basis: auto; font-size: 13px; }
 }
 
 /* =========================================================
